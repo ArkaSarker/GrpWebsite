@@ -77,6 +77,15 @@ box-sizing: border-box;}
     padding: 20px 12px;
     box-sizing: border-box;}
     .list1 h2 {background-color: #3652f4;}
+    footer{
+        background-color: olive;
+        padding: 15px;
+        margin:15px 0;
+        font-size: large;
+        text-align: center;
+        bottom: auto;
+        width: 100%;
+    }
 
 @media(max-width:700px) {.separate {flex-direction: column;}}
 
