@@ -83,3 +83,18 @@ box-sizing: border-box;}
 @media(max-width:700px) {.separate1 {flex-direction: column;}}
 
   /* Adding image */
+
+  .container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;}
+
+  .container img {
+    margin-right: 15px; }
+
+  .container .text {max-width: 600px;}
+
+  @media(max-width:700px) {.container  {flex-direction: column;}}
+  @media(max-width:700px) {.text {flex-direction: column;}}
+
+    
