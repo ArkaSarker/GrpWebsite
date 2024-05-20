@@ -4,11 +4,19 @@ background-position: center;
 background-size: cover;
 position: relative;}
 
-.header2 { min-height: 100vh;width: 100%;
+.header1 { min-height: 100vh;width: 100%;
     background-image: url("Power\ BI.jpg"); 
 background-position: center;
 background-size: cover;
 position: relative;}
+
+.header2 { margin-top: 0%;width: 100%;
+    background-color:black; 
+background-position: center;
+background-size: cover;
+position: relative;}
+
+
 
 nav{
     padding: 0;
