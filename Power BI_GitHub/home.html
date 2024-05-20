@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8 ">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>Power BI</title>
+        <link rel="stylesheet"href="styles.css">
+        <style>
+            #slider {
+               overflow: hidden;
+           
+            }
+            #slider figure {
+                   position: relative;
+                   width:400%;
+                   margin:0;
+                   left:0;
+                   animation:10s slider infinite;
+            }
+            #slider figure img {
+               float: left;
+               width:25%;
+               
+            }
+           
+           
+           @keyframes slider{
+           
+           0%{
+               left: 0;
+           }
+           30%{
+               left: 0;
+           }
+           /*0 to 2.5 second (which is 22.5 in percentage) we want to stop the animation to see image1*/
+           
+           33.33%{
+               left: -100%;
+           }
+           
+           /*then, we add the transition speed here, which is 0.25 second (which is 2.5%) so we should add 22.5% + 2.5% = 25%*/
+           /*NOTE: Same explanation Apply to the rest of the animation here for the total of 0% - 100% */
+           
+           63.33%{
+               left: -100%;
+           }
+           66.66%{
+               left: -200%;
+           }
+           100%{
+               left: -200%;
+           }
+           
+           }
+               </style>
+
+    </head>
+    <header>
+        <h1> Welcome to our Website</h1>
+    </header>
+    <nav style="background-color:whitesmoke; padding: 10px;text-align:center;">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Power BI</a></li>
+            <li><a href="github.html">GitHub</a></li>
+        </ul>
+    </nav>
+    <body>
+        <div id="slider">
+            <figure>
+                <img src="Power BI.jpg">
+                <img src="github cover .jpg">
+                <img src="Power BI.jpg">
+                
+            </figure>
+        </div>
+
+
+
+
+
+
+    </body>
+    <footer>
+        <p>&copy; 2024 Website developed by Nazmul & Sohom</p>
+    </footer>
+</html>
