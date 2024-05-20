@@ -4,18 +4,20 @@
         <meta charset="utf-8 ">
         <meta name="viewport" content="width=device-width", initial-scale="1.0">
         <title>Home website</title>
+        /*Adding external css */
         <link rel="stylesheet"href="styles.css">
         <style>
             #slider {
                overflow: hidden;
            
             }
+            /*Animation structure */
             #slider figure {
                    position: relative;
                    width:400%;
                    margin:0;
                    left:0;
-                   animation:10s slider infinite;
+                   animation:10s slider infinite; /* For creating a loop*/
             }
             #slider figure img {
                float: left;
@@ -24,22 +26,29 @@
             }
            h1 { color: white;}
            
+<<<<<<< HEAD
+           /* Adding Keyframes for animation*/
+           @keyframes slider
+           {
+           
+=======
            @keyframes slider{
            
+>>>>>>> 0aee9c3ab461c4fdc1a35862402ac3656937dea3
            0%{
                left: 0;
            }
            30%{
                left: 0;
            }
-           /*0 to 2.5 second (which is 22.5 in percentage) we want to stop the animation to see image1*/
+           /*0 to 3 second (which is 30 in percentage) */
            
            33.33%{
                left: -100%;
            }
            
-           /*then, we add the transition speed here, which is 0.25 second (which is 2.5%) so we should add 22.5% + 2.5% = 25%*/
-           /*NOTE: Same explanation Apply to the rest of the animation here for the total of 0% - 100% */
+           /*then, we add the transition speed here, which is 0.33 second (which is 3.3%) so we should add 30+3.33=33.33%*/
+           /*NOTE: Same explanation apply to the rest of the animation here for the total of 0% - 100% */
            
            63.33%{
                left: -100%;
